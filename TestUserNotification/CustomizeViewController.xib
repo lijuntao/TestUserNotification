@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送一个自定义UI的通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-uQ-DaO">
+                    <rect key="frame" x="72.5" y="100" width="230" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="F9c-di-kSt"/>
+                        <constraint firstAttribute="height" constant="50" id="l8t-y9-gDd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-6N-HaK">
+                    <rect key="frame" x="122" y="200" width="130" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="gal-D0-xYZ"/>
+                        <constraint firstAttribute="height" constant="41" id="rke-1e-F82"/>
+                    </constraints>
+                    <state key="normal" title="Tap Me"/>
+                    <connections>
+                        <action selector="costomizeAction:" destination="-1" eventType="touchUpInside" id="uFN-7N-XYN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6gf-6N-HaK" firstAttribute="top" secondItem="gTN-uQ-DaO" secondAttribute="bottom" constant="50" id="2Fv-w0-iXT"/>
+                <constraint firstItem="gTN-uQ-DaO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="ZT1-eV-X3E"/>
+                <constraint firstItem="6gf-6N-HaK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l0c-7G-o4g"/>
+                <constraint firstItem="gTN-uQ-DaO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zDs-CD-EM7"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
